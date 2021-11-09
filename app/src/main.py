@@ -16,15 +16,15 @@ def create_joke(id, author, value , created_at, updated_at):
             'url': url_for('get_joke', joke_id=id, _external=True),
             'created_at': datetime.datetime.fromtimestamp(created_at).isoformat(),
             'updated_at': datetime.datetime.fromtimestamp(updated_at).isoformat()}
- 
+
 def select(sqlquery, one=False):
     mariadb_connection = mariadb.connect(host='mariadbserver', port=3306, user='root', password='password', database='chiquito')
     cursor = mariadb_connection.cursor()
     cursor.execute(sqlquery)
     if one:
         return cursor.fetchone()
-    return cursor.fetchall() 
- 
+    return cursor.fetchall()
+
 def select_joke(sqlquery, one=False):
     data = select(sqlquery, one)
     if one:
@@ -36,8 +36,8 @@ def select_joke(sqlquery, one=False):
         for i in data:
             joke = create_joke(i[0], i[1], i[2], i[3], i[4])
             jokes.append(joke)
-        return jokes 
- 
+        return jokes
+
 @app.route('/api/1.0/jokes', methods=['GET'])
 def get_jokes():
     sqlquery = 'SELECT * FROM JOKES'
@@ -59,7 +59,7 @@ def get_random():
     id = random.randint(1, result[0])
     return get_joke(id)
 
-    
+
 @app.errorhandler(404)
 def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
@@ -69,4 +69,3 @@ if __name__ == '__main__':
     handler = RotatingFileHandler('foo.log', maxBytes=10000, backupCount=1)
     handler.setLevel(logging.INFO)
     app.logger.addHandler(handler)
-    app.run(debug=True, host='0.0.0.0')

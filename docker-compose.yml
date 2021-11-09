@@ -2,13 +2,13 @@ version: '3'
 services:
     chiquito:
         image: atareao/chiquito:composer
-        #build: .
+        build: .
         ports:
-            - "5000:5000"
+            - 8000:8000
     mariadbserver:
         image: mariadb
         ports:
-            - "3306:3306"
+            - 3306:3306
         volumes:
             - ./data:/var/lib/mysql
         environment:

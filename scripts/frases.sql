@@ -1,3 +1,11 @@
+DROP TABLE IF EXISTS JOKES;
+CREATE TABLE IF NOT EXISTS JOKES(
+    ID INTEGER NOT NULL AUTO_INCREMENT,
+    AUTHOR VARCHAR(30),
+    VALUE VARCHAR(1024),
+    CREATED_AT BIGINT,
+    UPDATED_AT BIGINT,
+    PRIMARY KEY(ID));
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  '¡Pecador!', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  '¿Te da cuen?', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  '¡Fistro!', 1570869628, 1570869628);
@@ -259,7 +267,7 @@ INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de l
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Eres más repetitivor que Pedro Picahander, que siempre corre por delante de la misma casa.Q', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Que ésto está maasss shungo que la nariz de Paco Rabaaal!! Jaaarrll!!', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes más labia que el del anuncio de Telefónicarrrl', 1570869628, 1570869628);
-INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene meno luces q’er Belén de la ONCERRRR', 1570869628, 1570869628);
+INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene meno luces qer Belén de la ONCERRRR', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estás más perdido que la Sirenita en Instinto Básico', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Eres más larga que la infancia de Heidi', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Que tienes más puntería que el que tira los donuts, no puedo, no puedorl', 1570869628, 1570869628);
@@ -1013,7 +1021,7 @@ INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de l
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estás más perdido que una hormiga en un libro de mil páginas', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estás más perdido que Wally', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estás más picado que los dientes del Príncipe de Beukelaer', 1570869628, 1570869628);
-INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estas más preocupado que D'Artacan con moquillo', 1570869628, 1570869628);
+INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estas más preocupado que D\'Artacan con moquillo', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estás más preparado que "Sorpresa, Sorpresa"', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estás más preparado que las mujeres en los anuncios de detergente', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estás más quemado que el telefonillo del coloso en llamas', 1570869628, 1570869628);
@@ -1164,7 +1172,7 @@ INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de l
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene más peligro que Jesusenagüer Gil y Gil en el camarote de los hermanos Marx', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene más rollo, que el perrito de Scotex.OOOOOOOORRRRRRRRRR!!!!', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene más tomas que una escena de Hamlet interpretada por Leticia Sabaterrrll.', 1570869628, 1570869628);
-INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene meno luces q'er Belén de la ONCERRRR', 1570869628, 1570869628);
+INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene meno luces qer Belén de la ONCERRRR', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene menos permisos que la cabra de la Legión', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene menos tornillos que una cometa.! cobarder', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tieneh máh peligror que un bidé lleno pirañas.¡¡ Jarrr!!', 1570869628, 1570869628);
@@ -1185,7 +1193,7 @@ INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de l
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes más caché que el mayordomo de Arturo Fernández', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes más caché que un Ferrero Rocher de centollo', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes más callos que la fabrica de la Litoral', 1570869628, 1570869628);
-INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes mas capacidad que la furgoneta del equipo 'a'', 1570869628, 1570869628);
+INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes mas capacidad que la furgoneta del equipo A', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes más cuento que la niña del anuncio de Vick Vaporux', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes más cuento que la niña del Vis-va-porú', 1570869628, 1570869628);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes más cuerdas que la raqueta de Santana', 1570869628, 1570869628);
@@ -1617,7 +1625,7 @@ INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de l
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Eres más repetitivor que Pedro Picahander, que siempre corre por delante de la misma casa.Q', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Que ésto está maasss shungo que la nariz de Paco Rabaaal!! Jaaarrll!!', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes más labia que el del anuncio de Telefónicarrrl', 1570869676, 1570869676);
-INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene meno luces q’er Belén de la ONCERRRR', 1570869676, 1570869676);
+INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene meno luces qer Belén de la ONCERRRR', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estás más perdido que la Sirenita en Instinto Básico', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Eres más larga que la infancia de Heidi', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Que tienes más puntería que el que tira los donuts, no puedo, no puedorl', 1570869676, 1570869676);
@@ -2371,7 +2379,7 @@ INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de l
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estás más perdido que una hormiga en un libro de mil páginas', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estás más perdido que Wally', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estás más picado que los dientes del Príncipe de Beukelaer', 1570869676, 1570869676);
-INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estas más preocupado que D'Artacan con moquillo', 1570869676, 1570869676);
+INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estas más preocupado que D\'Artacan con moquillo', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estás más preparado que "Sorpresa, Sorpresa"', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estás más preparado que las mujeres en los anuncios de detergente', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Estás más quemado que el telefonillo del coloso en llamas', 1570869676, 1570869676);
@@ -2522,7 +2530,7 @@ INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de l
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene más peligro que Jesusenagüer Gil y Gil en el camarote de los hermanos Marx', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene más rollo, que el perrito de Scotex.OOOOOOOORRRRRRRRRR!!!!', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene más tomas que una escena de Hamlet interpretada por Leticia Sabaterrrll.', 1570869676, 1570869676);
-INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene meno luces q'er Belén de la ONCERRRR', 1570869676, 1570869676);
+INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene meno luces qer Belén de la ONCERRRR', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene menos permisos que la cabra de la Legión', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tiene menos tornillos que una cometa.! cobarder', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tieneh máh peligror que un bidé lleno pirañas.¡¡ Jarrr!!', 1570869676, 1570869676);
@@ -2543,7 +2551,7 @@ INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de l
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes más caché que el mayordomo de Arturo Fernández', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes más caché que un Ferrero Rocher de centollo', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes más callos que la fabrica de la Litoral', 1570869676, 1570869676);
-INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes mas capacidad que la furgoneta del equipo 'a'', 1570869676, 1570869676);
+INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes mas capacidad que la furgoneta del equipo A', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes más cuento que la niña del anuncio de Vick Vaporux', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes más cuento que la niña del Vis-va-porú', 1570869676, 1570869676);
 INSERT INTO JOKES (AUTHOR, VALUE, CREATED_AT, UPDATED_AT) VALUES ('Chiquito de la calzada',  'Tienes más cuerdas que la raqueta de Santana', 1570869676, 1570869676);
